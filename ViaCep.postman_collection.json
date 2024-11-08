@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "9b74fe19-ad60-4be5-ae8c-08c6a2d2e06a",
+		"name": "ViaCep",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "314451"
+	},
+	"item": [
+		{
+			"name": "CEP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://viacep.com.br/ws/{{CEP}}/json/",
+					"protocol": "https",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"{{CEP}}",
+						"json",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CEPporEndereco",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "viacep.com.br/ws/{{UF}}/{{Cidade}}/{{Endereco}}/json/",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"{{UF}}",
+						"{{Cidade}}",
+						"{{Endereco}}",
+						"json",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "CEP",
+			"value": "01001000"
+		},
+		{
+			"key": "UF",
+			"value": "RS"
+		},
+		{
+			"key": "Cidade",
+			"value": "Porto Alegre"
+		},
+		{
+			"key": "Endereco",
+			"value": "Domingos"
+		}
+	]
+}
